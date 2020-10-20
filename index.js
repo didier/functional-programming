@@ -7,7 +7,3 @@ const TESLA_API = 'https://opendata.rdw.nl/resource/y4vt-i24s.json'
 const api = fetch(`${TESLA_API}?$$app_token=${APP_TOKEN}`)
             .then(response => response.json())
             .then(data => console.log(data));
-
-
-
-// console.log(api)
