@@ -20,9 +20,10 @@ const replaceAll = (string, replace, replaceBy) => {
  * @returns `String`
  */
 const replaceByArray = (string, replaceArray, replaceBy) => { 
-  let newString = string
-  replaceArray.forEach(item => replaceAll(newString, item, replaceBy))
-  return newString
+  // let newString = string
+  return replaceArray.forEach(item => replaceAll(string, item, replaceBy))
+  // console.log(newString)
+  // return newString
 }
 
 

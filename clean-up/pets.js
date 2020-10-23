@@ -1,4 +1,8 @@
+// Packages
 const csv = require('csvtojson')
+
+// Utilities
+const { replaceByArray } = require('../utils')
 
 const animals = [
   { 
@@ -67,9 +71,7 @@ async function cleanUp() {
   })
     
     // Correct all animal names
-    .map((entry) => entry
-      .replace('hont', 'hond')
-      .replace('dwerg teckel', 'hond'))
+    .map((entry) => replaceByArray(entry, ['dwerg teckel', 'hont'], 'hond'))
 
     // Remove all spaces and numbers
     .map((entry) => {
