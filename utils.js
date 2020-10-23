@@ -53,7 +53,7 @@ if (process.env.NODE_ENV === 'development') {
  * @param {String} string String of which to capitalize the first letter.
  * @returns `String` with capitalized first letter
  */
-const capitalize = (string) => (
+const capitalizeFirst = (string) => (
   string.charAt(0).toUpperCase() + string.slice(1)
 )
 
@@ -61,5 +61,6 @@ const capitalize = (string) => (
 module.exports = {
   data,
   replaceAll,
-  replaceByArray
+  replaceByArray,
+  capitalizeFirst
 }
