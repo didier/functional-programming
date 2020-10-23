@@ -47,6 +47,17 @@ if (process.env.NODE_ENV === 'development') {
   console.log('replaceByArray:\n', replaceByArray('hond-kat-kat', ['hond', 'kat'], 'cavia'))
 }
 
+/**
+ * Capitalizes the first letter of a given string
+ * 
+ * @param {String} string String of which to capitalize the first letter.
+ * @returns `String` with capitalized first letter
+ */
+const capitalize = (string) => (
+  string.charAt(0).toUpperCase() + string.slice(1)
+)
+
+
 module.exports = {
   data,
   replaceAll,
