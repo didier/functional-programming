@@ -78,7 +78,10 @@ async function cleanUp() {
         .replace(/ /g, ';')
     })
     // replace all strings that are not animals
-    .map(entry => entry)
+    .map(entry => { 
+      entry.split(';')
+      return entry
+    })
     
     .sort()
     // Replace all empty values with null
