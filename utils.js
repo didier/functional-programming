@@ -1,3 +1,15 @@
+// Packages
+const csv = require('csvtojson')
+
+// Path to CSV file
+const csvFilePath = './data/data.csv'
+
+// Convert CSV to JSON
+const data = async () => csv().fromFile(csvFilePath)
+
+// Get JSON data
+
+
 /**
  * 
  * @param {String} string String to replace parts of
@@ -20,10 +32,10 @@ const replaceAll = (string, replace, replaceBy) => {
  * @returns `String`
  */
 const replaceByArray = (string, replaceArray, replaceBy) => { 
-  // let newString = string
-  return replaceArray.forEach(item => replaceAll(string, item, replaceBy))
+  let newString = string
+  // return replaceArray.forEach(item => replaceAll(string, item, replaceBy))
   // console.log(newString)
-  // return newString
+  return newString
 }
 
 
@@ -36,6 +48,7 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 module.exports = {
+  data,
   replaceAll,
   replaceByArray
 }

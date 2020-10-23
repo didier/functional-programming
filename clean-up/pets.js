@@ -1,8 +1,7 @@
-// Packages
-const csv = require('csvtojson')
+
 
 // Utilities
-const { replaceByArray } = require('../utils')
+const { data, replaceByArray } = require('../utils')
 
 const animals = [
   { 
@@ -41,14 +40,8 @@ const animals = [
 
 async function cleanUp() {
 
-  // Path to CSV file
-  const csvFilePath = './data/data.csv'
-
-  // Convert CSV to JSON
-  const convertToJSON = async (filePath) => csv().fromFile(filePath)
-
   // Get JSON data
-  const json = await convertToJSON(csvFilePath)
+  const json = await data()
 
   // Get only the animals row
   const petsData = json.map((entry) => {
