@@ -1,9 +1,21 @@
 require('dotenv').config
-const fetch = require('node-fetch')
 const { API_KEY_NAME, API_KEY_ID, API_SECRET, APP_TOKEN, APP_SECRET } = process.env
+
+const fetch = require('node-fetch')
+const fs = require('fs')
 
 const TESLA_API = 'https://opendata.rdw.nl/resource/y4vt-i24s.json'
 
-const api = fetch(`${TESLA_API}?$$app_token=${APP_TOKEN}`)
+// Grab all cars registered by license plate
+fetch('https://opendata.rdw.nl/resource/j3bj-9ts7.json?$limit=1')
   .then(response => response.json())
-  .then(data => console.log(data))
+  .then(data =>
+    data.map(item => ({
+      prijs: Number(item.catalogusprijs),
+      merk: item.merk
+    }))
+      .filter(item => item.prijs ? item.prijs : false)
+      .sort((a, z) => z.prijs - a.prijs)
+  )
+  .then(console.log)
+  .then(data => JSON.stringify(data))
