@@ -1,4 +1,7 @@
-# functional-programming
+# As a parking spot's cost grows, does its convenience increase?
+
+## An interactive data visualisation on Dutch parking data.
+
 Functional Programming subject of [@cmda-tt](https://github.com/cmda-tt)
 
 In a few weeks time, this README will consist of a short summary and getting-started guide of this project. If you'd like to get a more comprehensive writeup of what this all entains, please refer to the [wiki](https://github.com/didiercatz/functional-programming/wiki). For now, enjoy this GIF. _With a hard 'G'_.

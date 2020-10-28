@@ -29,7 +29,7 @@ const replaceAll = (string, replace, replaceBy) => {
  * @param {String} string String to replace parts of
  * @param {Array} replaceArray Array of items which to replace the string with
  * @param {String} replaceBy String to replace the parts of the first string with
- * @returns `String`
+ * @returns `String` 
  */
 const replaceByArray = (string, replaceArray, replaceBy) => { 
   let newString = string
