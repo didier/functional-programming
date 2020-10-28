@@ -1,44 +1,44 @@
 {
-  "name": "functional-programming",
-  "version": "1.0.0",
-  "description": "Functional Programming subject of @CMDA-TT",
-  "main": "index.js",
-  "scripts": {
-    "start": "parcel index.html",
-    "dev": "parcel index.html"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/didiercatz/functional-programming.git"
-  },
-  "keywords": [
-    "functional",
-    "functional-programming",
-    "datavis",
-    "data-visualisation",
-    "data",
-    "d3",
-    "node",
-    "interactive"
-  ],
-  "author": "Didier Catz <hello@didiercatz.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/didiercatz/functional-programming/issues"
-  },
-  "homepage": "https://github.com/didiercatz/functional-programming#readme",
-  "devDependencies": {
-    "eslint": "^7.11.0",
-    "nodemon": "^2.0.5",
-    "parcel-bundler": "^1.12.4",
-    "prettier": "^2.1.2",
-    "prettier-eslint": "^11.0.0"
-  },
-  "dependencies": {
-    "csvtojson": "^2.0.10",
-    "dotenv": "^8.2.0",
-    "node-fetch": "^2.6.1",
-    "postcss-cli": "^8.1.0",
-    "tailwindcss": "^1.9.6"
-  }
+	"name": "functional-programming",
+	"version": "1.0.0",
+	"description": "Functional Programming subject of @CMDA-TT",
+	"main": "index.js",
+	"scripts": {
+		"start": "parcel src/index.html",
+		"dev": "parcel src/index.html"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/didiercatz/functional-programming.git"
+	},
+	"keywords": [
+		"functional",
+		"functional-programming",
+		"datavis",
+		"data-visualisation",
+		"data",
+		"d3",
+		"node",
+		"interactive"
+	],
+	"author": "Didier Catz <hello@didiercatz.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/didiercatz/functional-programming/issues"
+	},
+	"homepage": "https://github.com/didiercatz/functional-programming#readme",
+	"devDependencies": {
+		"eslint": "^7.11.0",
+		"nodemon": "^2.0.5",
+		"parcel-bundler": "^1.12.4",
+		"prettier": "^2.1.2",
+		"prettier-eslint": "^11.0.0"
+	},
+	"dependencies": {
+		"csvtojson": "^2.0.10",
+		"dotenv": "^8.2.0",
+		"node-fetch": "^2.6.1",
+		"postcss-cli": "^8.1.0",
+		"tailwindcss": "^1.9.6"
+	}
 }
