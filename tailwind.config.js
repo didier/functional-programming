@@ -3,16 +3,24 @@ module.exports = {
     standardFontWeights: true,
     defaultLineHeights: true,
     removeDeprecatedGapUtilities: true,
-    purgeLayersByDefault: true,
+    // purgeLayersByDefault: true,
   },
   purge: ['*.html'],
   theme: {
     extend: {},
+    typography: (theme) => ({
+      default: {
+        css: {
+          color: theme('colors.gray.900'),
+          h1: {
+            fontSize: theme('text.6xl'),
+          },
+        }
+      }
+    })
   },
   variants: {
-    typography: {
-      h1: false
-    }
+    
   },
   plugins: [
     require('@tailwindcss/typography'),

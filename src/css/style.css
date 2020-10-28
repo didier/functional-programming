@@ -23,6 +23,16 @@ h5,
 h6 {
 	@apply font-bold;
 	@apply font-sans;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
 	margin: 1em 0 0.5em 0;
 }
 
@@ -47,7 +57,7 @@ h6 {
 
 main {
 	font-size: 1rem;
-	max-width: calc(var(--base) * 64);
+	max-width: calc(var(--base) * 50);
 }
 
 q {
@@ -57,13 +67,4 @@ q {
 
 a {
 	@apply text-blue-600;
-}
-
-li:before {
-	content: '';
-	width: 2px;
-	height: 2px;
-	color: currentColor;
-	background: currentColor;
-	border-radius: 100px;
 }

@@ -2,6 +2,8 @@
 
 ## An interactive data visualisation on Dutch parking data.
 
+In collaboration with the Volkskrant, a Dutch news outlet focused on objective and neutral-standpoint news, I will be creating an interactive datavisualisation regarding parking in the city. I want to measure and define convenience and see if a parking spot's cost positively or negatively influences this convenience.
+
 Functional Programming subject of [@cmda-tt](https://github.com/cmda-tt)
 
 ### Interesting Variables
