@@ -1,18 +1,32 @@
 # As a parking spot's cost grows, does its convenience increase?
 
 ## An interactive data visualisation on Dutch parking data.
+
 Functional Programming subject of [@cmda-tt](https://github.com/cmda-tt)
 
 <br>
 
 ### Interesting Variables
-- Opening Times,
+
+- Opening times — [Open Data Parkereen: Tijdvak](https://opendata.rdw.nl/Parkeren/Open-Data-Parkeren-TIJDVAK/ixf8-gtwq)
+
+  - StartTimeTimeFrame
+  - EndTimeTimeFrame
+
 - Electric Vehicle charging spots
-- Hourly cost
-- Opening times
-- How long you can park
+
+- Hourly cost — [Open Data Parkeren: Tariefdeel](https://opendata.rdw.nl/Parkeren/Open-Data-Parkeren-TARIEFDEEL/534e-5vdg)
+
+  - StartDateFarePart
+  - StartDurationFarePart
+  - EndDurationFarePart
+  - AmountFarePart
+  - StepSizeFarePart
+
+- For how long you can park
 
 ### Interesting questions
+
 - If it's cheap, for how long can you park there?
 - Which electric charging spots charge the most per hour?
 
