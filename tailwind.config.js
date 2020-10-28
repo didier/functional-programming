@@ -9,6 +9,12 @@ module.exports = {
   theme: {
     extend: {},
   },
-  variants: {},
-  plugins: [],
+  variants: {
+    typography: {
+      h1: false
+    }
+  },
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }

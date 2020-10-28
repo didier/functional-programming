@@ -4,11 +4,15 @@
 
 @tailwind utilities;
 
+:root {
+	--base: 16px;
+}
 html,
 body {
 	/* @apply font-serif; */
 	@apply bg-gray-100;
 	@apply leading-normal;
+	font-size: var(--base);
 }
 
 h1,
@@ -39,4 +43,27 @@ h5 {
 }
 h6 {
 	@apply text-xl;
+}
+
+main {
+	font-size: 1rem;
+	max-width: calc(var(--base) * 64);
+}
+
+q {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	@apply text-blue-600;
+}
+
+li:before {
+	content: '';
+	width: 2px;
+	height: 2px;
+	color: currentColor;
+	background: currentColor;
+	border-radius: 100px;
 }

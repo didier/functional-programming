@@ -35,8 +35,10 @@
 		"prettier-eslint": "^11.0.0"
 	},
 	"dependencies": {
+		"@tailwindcss/typography": "^0.2.0",
 		"csvtojson": "^2.0.10",
 		"dotenv": "^8.2.0",
+		"marked": "^1.2.2",
 		"node-fetch": "^2.6.1",
 		"postcss-cli": "^8.1.0",
 		"tailwindcss": "^1.9.6"
