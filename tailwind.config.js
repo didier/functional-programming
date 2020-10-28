@@ -1,5 +1,7 @@
 module.exports = {
   future: {
+    standardFontWeights: true,
+    defaultLineHeights: true,
     removeDeprecatedGapUtilities: true,
     purgeLayersByDefault: true,
   },
