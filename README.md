@@ -4,8 +4,6 @@
 
 Functional Programming subject of [@cmda-tt](https://github.com/cmda-tt)
 
-<br>
-
 ### Interesting Variables
 
 - Opening times — [Open Data Parkereen: Tijdvak](https://opendata.rdw.nl/Parkeren/Open-Data-Parkeren-TIJDVAK/ixf8-gtwq)
@@ -32,6 +30,6 @@ Functional Programming subject of [@cmda-tt](https://github.com/cmda-tt)
 
 ---
 
-:bulb: _In a few weeks time, this README will consist of a short summary and getting-started guide of this project. If you'd like to get a more comprehensive writeup of what this all entains, please refer to the [wiki](https://github.com/didiercatz/functional-programming/wiki). For now, enjoy this GIF. *With a hard 'G'*._
+💡 _In a few weeks time, this README will consist of a short summary and getting-started guide of this project. If you'd like to get a more comprehensive writeup of what this all entains, please refer to the [wiki](https://github.com/didiercatz/functional-programming/wiki). For now, enjoy this GIF. *With a hard 'G'*._
 
 <img src="https://media.giphy.com/media/Wsju5zAb5kcOfxJV9i/giphy.gif" alt="programming">
