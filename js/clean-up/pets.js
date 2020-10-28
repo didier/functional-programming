@@ -1,7 +1,7 @@
 
 
 // Utilities
-const { data, replaceByArray } = require('../utils')
+const { data, replaceByArray } = require('../../utils')
 
 const animals = [
   { 
