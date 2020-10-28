@@ -5,7 +5,16 @@ module.exports = {
     removeDeprecatedGapUtilities: true,
     // purgeLayersByDefault: true,
   },
-  purge: ['*.html'],
+  purge: {
+    content: [
+      '**/**/*.html',
+      'dist/index.html',
+      '*.html',
+      'src/index.html'
+    ],
+    options: {
+      whitelist: ['mx-auto', 'px-4'],
+    }},
   theme: {
     extend: {},
     typography: (theme) => ({
