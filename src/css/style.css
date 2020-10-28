@@ -55,9 +55,8 @@ h6 {
 	@apply text-xl;
 }
 
-main {
+.container {
 	font-size: 1rem;
-	max-width: calc(var(--base) * 50);
 }
 
 q {

@@ -11,10 +11,6 @@ module.exports = {
     typography: (theme) => ({
       default: {
         css: {
-          color: theme('colors.gray.900'),
-          h1: {
-            fontSize: theme('text.6xl'),
-          },
         }
       }
     })
