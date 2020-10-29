@@ -1,6 +1,8 @@
-# As a parking spot's cost grows, does its convenience increase?
+# As a parking spot's customer price grows, does its convenience increase?
 
 By [Didier Catz](https://didiercatz.com)
+
+#### For this project, a few assumptions will be made. _Convenience_ in this case means how convenient a spot is for the customer — e.g. is it cheap? Are there enough parking spots? Is it easily accessible? _How much comfort does it bring to the customer_.
 
 ## An interactive data visualisation on Dutch parking data.
 
