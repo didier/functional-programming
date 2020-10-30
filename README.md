@@ -74,6 +74,18 @@ Builds and bundles the files into a static folder at `./dist`
 yarn build # or npm run build
 ```
 
+## Sources
+
+<!-- ### Data -->
+
+- Open Data Parkeren — Tariefdeel. (n.d.). Open Data RDW. Retrieved October 28, 2020, from https://opendata.rdw.nl/Parkeren/Open-Data-Parkeren-TARIEFDEEL/534e-5vdg
+- Open Data RDW — Datasets. (n.d.). Open Data RDW. Retrieved October 27, 2020, from https://opendata.rdw.nl/browse
+<!-- ### Knowledge -->
+
+## License
+
+[MIT](https://github.com/didiercatz/functional-programming/blob/main/LICENSE)
+
 ---
 
 💡 _In a few weeks time, this README will consist of a short summary and getting-started guide of this project. If you'd like to get a more comprehensive writeup of what this all entains, please refer to the [wiki](https://github.com/didiercatz/functional-programming/wiki). For now, enjoy this GIF. *With a hard 'G'*._
