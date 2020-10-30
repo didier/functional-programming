@@ -2,7 +2,7 @@
 
 By [Didier Catz](https://didiercatz.com)
 
-##### For this project, a few assumptions will be made. _Convenience_ in this case means how convenient a spot is for the customer — e.g. is it cheap? Are there enough parking spots? Is it easily accessible? _How much comfort does it bring to the customer?_
+For this project, a few assumptions will be made. _Convenience_ in this case means how convenient a spot is for the customer — e.g. is it cheap? Are there enough parking spots? Is it easily accessible? _How much comfort does it bring to the customer?_
 
 ## An interactive data visualisation on Dutch parking data.
 
