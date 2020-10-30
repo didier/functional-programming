@@ -5,7 +5,7 @@
 	"main": "index.js",
 	"scripts": {
 		"start": "parcel src/index.html",
-		"dev": "parcel src/index.html",
+		"dev": "NODE_ENV=development parcel src/index.html",
 		"build": "parcel build src/index.html"
 	},
 	"repository": {
@@ -38,6 +38,7 @@
 	"dependencies": {
 		"@tailwindcss/typography": "^0.2.0",
 		"csvtojson": "^2.0.10",
+		"d3": "6",
 		"dotenv": "^8.2.0",
 		"marked": "^1.2.2",
 		"node-fetch": "^2.6.1",

@@ -1,5 +1,11 @@
 require('dotenv').config
-const { API_KEY_NAME, API_KEY_ID, API_SECRET, APP_TOKEN, APP_SECRET } = process.env
+const {
+  API_KEY_NAME,
+  API_KEY_ID,
+  API_SECRET,
+  APP_TOKEN,
+  APP_SECRET
+} = process.env
 
 const fetch = require('node-fetch')
 const fs = require('fs')

@@ -3,7 +3,7 @@ const {
   replaceByArray,
   replaceAll,
   capitalizeFirst
-} = require('../utils')
+} = require('../src/js/utils')
 
 async function substance() { 
 
