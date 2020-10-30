@@ -4,6 +4,10 @@ By [Didier Catz](https://didiercatz.com)
 
 For this project, a few assumptions will be made. _Convenience_ in this case means how convenient a spot is for the customer — e.g. is it cheap? Are there enough parking spots? Is it easily accessible? _How much comfort does it bring to the customer?_
 
+<br/>
+
+![About this project](https://raw.githubusercontent.com/didiercatz/functional-programming/main/src/assets/images/about-this-project.svg)
+
 ## An interactive data visualisation on Dutch parking data.
 
 In collaboration with the Volkskrant, a Dutch news outlet focused on objective and neutral-standpoint news, I will be creating an interactive datavisualisation regarding parking in the city. I want to measure and define convenience and see if a parking spot's cost positively or negatively influences this convenience.
@@ -35,6 +39,11 @@ Functional Programming subject of [@cmda-tt](https://github.com/cmda-tt)
 - Which electric charging spots charge the most per hour?
 
 ---
+
+<br/>
+
+![Diving into the code](https://raw.githubusercontent.com/didiercatz/functional-programming/main/src/assets/images/diving-into-the-code.svg)
+
 
 ## Getting started with this repo
 
