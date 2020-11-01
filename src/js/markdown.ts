@@ -1,15 +1,19 @@
-const marked = require('marked')
+// Packages
+import marked from 'marked'
 
-const user: string = 'didiercatz'
-const repo: string = 'functional-programming'
-const path: string = 'README.md'
+// Constants
+const user = 'didiercatz'
+const repo = 'functional-programming'
+const path = 'README.md'
 
 // const url = `https://api.github.com/repos/${user}/${repo}/contents/${path}`
 const url: string =
 	'https://raw.githubusercontent.com/didiercatz/functional-programming/main/README.md'
 
-const main: HTMLElement = document.querySelector('main')
+// Bind main element to main variable
+const main = document.querySelector('main')
 
+// Fetch markdown content and parse into HTML
 fetch(url)
 	.then((res) => res.text())
 	.then((content) => {

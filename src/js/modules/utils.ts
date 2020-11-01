@@ -1,5 +1,5 @@
 // Packages
-const csv = require('csvtojson')
+import csv from 'csvtojson'
 
 // Path to CSV file
 const csvFilePath = './data/data.csv'
