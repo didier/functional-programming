@@ -1,14 +1,15 @@
 const {
   data,
   capitalizeFirst
-} = require('../src/js/utils')
+} = require('../src/js/modules/utils')
 
 async function substance() { 
 
-  const json = await data()
+  const json = data
+  console.log(data)
 
   const substancesDirty = json.map(entry => { 
-    return entry['Wat is je favoriete drug? (of geen)']
+    return entry['favorieteDrug']
   })
 
   const substancesClean = substancesDirty

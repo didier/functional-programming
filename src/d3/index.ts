@@ -7,8 +7,8 @@ const svg = select('svg')
 
 svg.style('background', 'red')
 
-const height = +svg.attr('height')
-const width = +svg.attr('width')
+const height: number = +svg.attr('height')
+const width: number = +svg.attr('width')
 
 const circle = svg
 	.append('circle')
@@ -16,8 +16,12 @@ const circle = svg
 	.attr('cx', width / 2)
 	.attr('cy', height / 2)
 
-const render = (data: TariefDeel[]): void => {
-	console.log(data)
+/**
+ * Renders a visualisation based on the data it receives.
+ *
+ * @param {TariefDeel[]} data The data to render
+ */
+function render(data: TariefDeel[]): void {
 	const xScale = scaleLinear()
 
 	svg
@@ -29,8 +33,21 @@ const render = (data: TariefDeel[]): void => {
 		.attr('height', 30)
 }
 
+// Grab CSV path from Parcel's compiled bundle and parse it with `d3-dsv`
 csv(csvPath)
+	// Turn all numeric strings into numbers
 	.then((data) => {
-		return data
+		return data.map((object: any) => ({
+			AreaManagerId: +object['AreaManagerId'],
+			FareCalculationCode: object['FareCalculationCode'],
+			StartDateFarePart: +object['StartDateFarePart'],
+			StartDurationFarePart: +object['StartDurationFarePart'],
+			EndDurationFarePart: +object['EndDurationFarePart'],
+			AmountFarePart: +object['AmountFarePart'],
+			StepSizeFarePart: +object['StepSizeFarePart'],
+			EndDateFarePart: +object['EndDateFarePart'],
+			AmountCumulative: +object['AmountCumulative']
+		}))
 	})
-	.then((cleanedData) => render(cleanedData))
+	// Render cleaned data
+	.then(render)

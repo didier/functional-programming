@@ -1,14 +1,19 @@
-// Packages
-const data = require('../src/d3/data/data.json')
+/**
+ * Exports the Information Design survey data.
+ *
+ * @description uses the `require` syntax to avoid fiddling with top-level async
+ */
+export const data = require('../../d3/data/data.json')
 
 /**
+ * Replaces all occurences of a substring within a string with a specified value.
  *
  * @param {String} string String to replace parts of
  * @param {String} replace Part of string to replace
  * @param {String} replaceBy Part to replace with
  * @returns `String`
  */
-function replaceAll(
+export function replaceAll(
 	string: string,
 	replace: string,
 	replaceBy: string
@@ -19,35 +24,35 @@ function replaceAll(
 }
 
 /**
- * Replace string by multiple values from array
+ * Replace string by multiple values from array.
  *
- * @param {String} string String to replace parts of
+ * @param {String} string String to replace parts of.
  * @param {Array} replaceArray Array of items which to replace the string with
  * @param {String} replaceBy String to replace the parts of the first string with
- * @returns `String`
+ * @returns `String` of which parts from the `replaceArray` have been replaced by `replaceBy`
  */
-function replaceByArray(
+export function replaceByArray(
 	string: string,
 	replaceArray: string[],
 	replaceBy: string
 ): string {
-	// TODO: Add replaceArray function
-	// let newString: string = string;
+	// TODO: Fix replaceArray function
+	let newString: string = string
 	// return replaceArray.forEach((item) => replaceAll(string, item, replaceBy));
-
-	// Return something so TS doesn't yell at me.
-	return string
+	//  Return something so TS doesn't yell at me.
+	return newString
 }
 
 /**
- * Capitalizes the first letter of a given string
+ * Capitalizes the first letter of a given string.
  *
- * @param {String} string String of which to capitalize the first letter.
+ * @param {String} string String of which to capitalize the first letter
  * @returns `String` with capitalized first letter
  */
-function capitalizeFirst(string: string): string {
+export function capitalizeFirst(string: string): string {
 	return string.charAt(0).toUpperCase() + string.slice(1)
 }
+
 /**
  * Removes excessive whitespace at the start or end of an object's property.
  *
@@ -55,7 +60,7 @@ function capitalizeFirst(string: string): string {
  * @param {string} property - The property to be trimmed
  * @returns {[]} - The cleaned array of objects
  */
-function removeWhitespace(data: object[], property: string): object[] {
+export function removeWhitespace(data: object[], property: string): object[] {
 	return data.map((item: any) => {
 		const trimmed: string = item[property].trim()
 		return { [property]: trimmed }
@@ -72,11 +77,4 @@ if (process.env.NODE_ENV === 'development') {
 		'replaceByArray:\n',
 		replaceByArray('hond-kat-kat', ['hond', 'kat'], 'cavia')
 	)
-}
-
-export default {
-	data,
-	replaceAll,
-	replaceByArray,
-	capitalizeFirst
 }
