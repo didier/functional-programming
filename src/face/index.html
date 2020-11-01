@@ -11,13 +11,14 @@
 		<nav class="container mx-auto px-4 max-w-screen-md">
 			<ul class="flex gap-4">
 				<li><a href="/">Home</a></li>
-				<li><a href="./face/index.html">Face with D3</a></li>
-				<li><a href="./d3/index.html">Visualisation</a></li>
+				<li><a href="/face/index.html">Face with D3</a></li>
+				<li><a href="/d3/index.html">Visualisation</a></li>
 			</ul>
 		</nav>
-		<main
-			class="container mx-auto max-w-screen-md my-16 px-4 prose lg:prose-xl"
-		></main>
-		<script src="./js/markdown.ts" defer></script>
+		<main class="container mx-auto my-16 px-4 prose lg:prose-xl">
+			<h1>What are you looking at?</h1>
+			<svg class="visualisation" width="700" height="500"></svg>
+		</main>
+		<script src="./app.ts" defer></script>
 	</body>
 </html>
