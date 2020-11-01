@@ -13,6 +13,9 @@ data
 .csv
 data*.*
 
+# Don't commit compiled TS
+**/modules/*.js
+
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 

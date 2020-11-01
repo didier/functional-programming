@@ -1,7 +1,5 @@
 const {
   data,
-  replaceByArray,
-  replaceAll,
   capitalizeFirst
 } = require('../src/js/utils')
 

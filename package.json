@@ -4,6 +4,10 @@
 	"description": "Functional Programming subject of @CMDA-TT",
 	"main": "index.js",
 	"scripts": {
+		"compile": "tsc src/js/modules/utils.ts",
+		"clean:pets": "npm run compile && node clean-up/pets.js",
+		"clean:cars": "npm run compile && node clean-up/cars.js",
+		"clean:substance": "npm run compile && node clean-up/substance.js",
 		"start": "parcel src/index.html",
 		"dev": "NODE_ENV=development parcel src/*.html",
 		"build": "parcel build src/index.html"
@@ -35,7 +39,8 @@
 		"nodemon": "^2.0.5",
 		"parcel-bundler": "^1.12.4",
 		"prettier": "^2.1.2",
-		"prettier-eslint": "^11.0.0"
+		"prettier-eslint": "^11.0.0",
+		"typescript": "^4.0.5"
 	},
 	"dependencies": {
 		"@tailwindcss/typography": "^0.2.0",
