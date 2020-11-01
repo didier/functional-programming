@@ -8,7 +8,10 @@ lerna-debug.log*
 data
 
 .vscode
+
+# Make sure no data files are pushed are managed by Git.
 .csv
+data*.*
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json

@@ -37,7 +37,7 @@ const replaceByArray = (
 	replaceArray: string[],
 	replaceBy: string
 ): string => {
-	// TODO: Add replacearray function
+	// TODO: Add replaceArray function
 	// let newString: string = string;
 	// return replaceArray.forEach((item) => replaceAll(string, item, replaceBy));
 
