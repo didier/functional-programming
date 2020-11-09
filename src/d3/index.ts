@@ -1,5 +1,6 @@
 import { csv, scaleLinear, select } from 'd3'
 import { TariefDeel } from '../js/modules/interfaces'
+
 // Ask Parcel for the bundled URL of the data file.
 import csvPath from './data/opendata-tariefdeel.csv'
 
@@ -22,6 +23,7 @@ const circle = svg
  * @param {TariefDeel[]} data The data to render
  */
 function render(data: TariefDeel[]): void {
+	// TODO: Map values to a linear scale using domain() and range(), in order to create a nice
 	const xScale = scaleLinear()
 
 	svg
